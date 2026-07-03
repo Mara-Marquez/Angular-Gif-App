@@ -3,8 +3,25 @@
 <section class="py-5">
 <!--gif-list-->
 
-<gif-list   ></gif-list><!-- [ImagesUrl]="Images" //como signal gifService.trendingGifs()-->
+<!-- [ImagesUrl]="Images" //como signal gifService.trendingGifs()-->
 <!--[gifs]="saveStikers()"--->
+<div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+    <!--
+    <div *ngFor ="let image of ImagesUrl">
+<gif-lits-item [ImageUrl]="image"></gif-lits-item>
+  //anterior de solo imagenes  -->
+
+
+    
+    <!--@for(image of ImagesUrl();track image){
+    <gif-lits-item [ImageUrl]="image"></gif-lits-item>
+    }//nuevo con @for
+-->
+<div *ngFor="let g of saveUrls">
+<gif-lits-item [ImageUrl]="g"></gif-lits-item>
+</div>
+</div>
 
 
 </section>
