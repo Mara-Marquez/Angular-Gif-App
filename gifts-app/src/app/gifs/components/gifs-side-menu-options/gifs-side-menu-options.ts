@@ -41,6 +41,19 @@ menuOptions:MenuOption[]=[
       icon:'fa-solid fa-chart-line',
     route:'/dashboard/masonry'
   },
+
+    {
+    label:'Stikers',
+    sublabel:'Buscar stikers',
+      icon:'fa-regular fa-heart',
+    route:'/dashboard/stikerSerch'
+  },
+    {
+    label:'Save Stikers',
+    sublabel:'Buscar stikers',
+      icon:'fa-solid fa-floppy-disk',
+    route:'/dashboard/stikerSave'
+  },
   /*
     {
     label:'Historial',

@@ -14,7 +14,8 @@ import { GifLitsItem } from './gifs/components/gif-list/gif-lits-item/gif-lits-i
 import { GifList } from './gifs/components/gif-list/gif-list';
 import { GifHistoryPage } from './gifs/pages/gif-history-page/gif-history-page';
 import { MasonryPage } from './gifs/pages/Masonry-page/Masonry-page';
-
+import{SaveStikersPage} from './gifs/pages/stiker-page/save-stikers-page/save-stikers-page';
+import{StikerPage} from './gifs/pages/stiker-page/stiker-page';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { MasonryPage } from './gifs/pages/Masonry-page/Masonry-page';
      GifLitsItem,
      GifList,
      GifHistoryPage,
-     MasonryPage
+     MasonryPage,
+     SaveStikersPage,
+     StikerPage
 
   ],
   imports: [
