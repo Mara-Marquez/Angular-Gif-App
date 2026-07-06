@@ -16,6 +16,8 @@ import { GifHistoryPage } from './gifs/pages/gif-history-page/gif-history-page';
 import { MasonryPage } from './gifs/pages/Masonry-page/Masonry-page';
 import{SaveStikersPage} from './gifs/pages/stiker-page/save-stikers-page/save-stikers-page';
 import{StikerPage} from './gifs/pages/stiker-page/stiker-page';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,10 @@ import{StikerPage} from './gifs/pages/stiker-page/stiker-page';
      HttpClientModule,
    
   ],
-  providers: [],
+  
+providers: [
+  { provide: LocationStrategy, useClass: HashLocationStrategy }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
