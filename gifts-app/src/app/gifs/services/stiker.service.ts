@@ -77,4 +77,15 @@ SearchStikers(query:string):Observable<Stiker[]>{
   
   );
 }
+
+deleteUrl(url: string) {
+
+  this.SaveUrlStikers.update(urls =>
+    urls.filter(u => u !== url)
+  );
+  window.location.reload();
+console.log('Service eliminado el ;',url);
+}
+
+
 }

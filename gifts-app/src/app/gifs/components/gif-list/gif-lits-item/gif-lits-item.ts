@@ -19,5 +19,15 @@ onClick(Url:string) {
 
   @Input()
   ImageUrl='';
+
+  @Input()
+  Page:string='';
   //InmageUrl=input.required<string>()//nuevo signal
+
+  DeleteElement(Url:string){
+   console.log('item eliminado el ;',Url);
+ this.stikerService.deleteUrl(Url);
+
+  }
+
 }

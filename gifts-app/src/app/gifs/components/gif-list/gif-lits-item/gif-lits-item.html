@@ -1,17 +1,32 @@
 
 
 <div class="p-1 ">
+  
 <div >
         <img class="h-full w-full rounded-base object-cover"  [src]="ImageUrl" alt=""><!--se pondria como [src]="imagUrl()"-->
 
     </div>
-   
-    <button class="p-2  border border-gray-300  rounded-md  font-bold text-white  bg-gray-800 hover:bg-red-600" 
+
+
+<button
+    *ngIf="Page !== 'SaveStikers'"
+    class="p-2 border border-gray-300 rounded-md font-bold text-white bg-gray-800 hover:bg-red-600"
     (click)="onClick(ImageUrl)"
-    >
-         <i class="  fa-regular fa-heart d "></i>
+  >
+    <i class="fa-regular fa-heart"></i>
+  </button>
+
+  <button
+    *ngIf="Page === 'SaveStikers'"
+    class="p-2 border border-gray-300 rounded-md font-bold text-white bg-gray-800 hover:bg-red-600"
+    (click)="DeleteElement(ImageUrl)"
+  >
+    <i class="fa-solid fa-trash"></i>
+  </button>
+
+
+
    
-    </button>
 
 </div>
     

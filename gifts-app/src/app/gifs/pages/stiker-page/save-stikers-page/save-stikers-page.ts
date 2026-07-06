@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, Output } from '@angular/core';
 import { StikerService } from 'src/app/gifs/services/stiker.service';
 
 @Component({
@@ -15,5 +15,6 @@ export class SaveStikersPage {
 
   }
   saveUrls=this.stikerService.SaveUrlStikers();
-  
+
+  Page:string='SaveStikers'
 }

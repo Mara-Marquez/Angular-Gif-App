@@ -19,4 +19,8 @@ export class GifList {
   console.log(this.gifs)
  }
  //gifs=input.required<Gif[]>()
+
+   @Input()
+  Page:string='';
+
 }
