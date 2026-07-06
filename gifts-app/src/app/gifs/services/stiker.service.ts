@@ -38,8 +38,10 @@ saveUrl(url:string){
     if(c.includes(url)){
       return c;
     }
+  
      return [...c, url];
   })
+  console.log( 'stikers guardados',this.SaveUrlStikers());
 }
 //efecto para guardarlos local
 
@@ -47,11 +49,10 @@ saveUrlsToLocalStorage = effect(() => {
 
   localStorage.setItem(
     'saveStikers',
-    JSON.stringify(this.SaveUrlStiker())
+    JSON.stringify(this.SaveUrlStikers())
   );
-
+ console.log( 'stikers guardados en local');
 });
-
 
 
 
